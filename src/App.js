@@ -9,7 +9,7 @@ function App() {
   };
   return (
     <section className="section-center">
-      <h3>TIRED OF BORING LOREM IPSUM ?</h3>
+      <h3>Paragraphs Generator</h3>
       <form action="" className="lorem-form" onSubmit={handleSubmit}>
         <label htmlFor="number">Paragraph:</label>
         <input
@@ -18,6 +18,8 @@ function App() {
           type="number"
           name="number"
           id="number"
+          max={8}
+          min={0}
           onChange={(e) => setNumber(e.target.value)}
         />
         <button type="submit" className="btn">
